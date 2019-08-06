@@ -82,6 +82,7 @@ solver.solve();
 
 // JavaScript logger 
 
+// @TODO figure out why only some variables appear to be set?
 // console.log(solver);
 
 console.log("ten "+consTen.toString());
