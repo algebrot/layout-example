@@ -1,4 +1,4 @@
-// Copied from 'Getting Started Under Node' 
+// https://constraints.cs.washington.edu/solvers/cassowary-tochi.pdf
 // https://github.com/slightlyoff/cassowary.js 
 
 var c = require("cassowary");
