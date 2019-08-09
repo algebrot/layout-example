@@ -1,2 +1,2 @@
 # layout-example
-Cassowary constraint implementation. 
+Cassowary constraint implementation for rectangle objects. 
