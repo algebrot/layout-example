@@ -25,9 +25,6 @@ var bWidth = new c.Variable({ value: 30 });
 
 // Expression
 
-// var geqEx = new c.Expression(c.GEQ);
-// var leqEx = new c.Expression(c.LEQ);
-
 var tenEx = new c.Expression(consTen);
 var twentyEx = new c.Expression(consTwenty);
 var thirtyEx = new c.Expression(consThirty);
