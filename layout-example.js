@@ -6,7 +6,6 @@ var c = require("cassowary");
 var solver = new c.SimplexSolver();
 
 // Variable
-
 var consTen = new c.Variable({ value: 10 });
 var consTwenty = new c.Variable({ value: 20 });
 var consThirty = new c.Variable({ value: 30 });
@@ -24,7 +23,6 @@ var bRight = new c.Variable({ value: 70 });
 var bWidth = new c.Variable({ value: 30 });
 
 // Expression
-
 var tenEx = new c.Expression(consTen);
 var twentyEx = new c.Expression(consTwenty);
 var thirtyEx = new c.Expression(consThirty);
@@ -42,7 +40,6 @@ var bRightEx = new c.Expression(bRight);
 var bWidthEx = new c.Expression(bWidth);
 
 // Equation
-
 // -10 - p.left + a.left >= 0 | 10 ≤ a.left - p.left 
 var w1Eq = new c.Inequality(aLeftEx.minus(pLeftEx).minus(tenEx));
 // 10 + p.left - a.left >= 0 | a.left - p.left ≤ 10
@@ -77,9 +74,8 @@ solver.addConstraint(w10Eq);
 
 solver.solve();
 
-// JavaScript logger 
-
-// console.log(solver);
+// Logger 
+console.log(solver);
 
 console.log("ten "+consTen.toString());
 console.log("twenty "+consTwenty.toString());
